@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.footysteam.app"
+        versionCode = "10"
+        version     = "2.0">
+
+    <name>Tadapp.DEMO</name>
+
+    <description>
+        Footy Steam, Soccer Videos, Skill Videos, Dripling Videos, Goal Videos, Match Summaries, Match Videos
+    </description>
+
+    <author>Tadapp</author>
+
+    <plugin name='cordova-plugin-splashscreen' />
+    <plugin name='cordova-plugin-inappbrowser' />
+    <plugin name='cordova-plugin-network-information' />
+
+    <preference name='phonegap-version' value='cli-9.0.0' />
+
+    <gap:plugin name='onesignal-cordova-plugin' spec='2.4.5' source='npm' />
+
+    <preference name='android-build-tool' value='gradle' />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name='orientation' value='portrait' />
+
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashScreenSpinnerColor" value="#e62020" />
+
+    <preference name="Fullscreen" value="false" />
+
+
+    <platform name="android">
+        <icon src="res/android/icon/ldpi_1574366750_ff4b1086feb0398acc82.png" density="ldpi" />
+        <icon src="res/android/icon/mdpi_1574366750_ff4b1086feb0398acc82.png" density="mdpi" />
+        <icon src="res/android/icon/hdpi_1574366750_ff4b1086feb0398acc82.png" density="hdpi" />
+        <icon src="res/android/icon/xhdpi_1574366750_ff4b1086feb0398acc82.png" density="xhdpi" />
+        <icon src="res/android/icon/xxhdpi_1574366750_ff4b1086feb0398acc82.png" density="xxhdpi" />
+        <icon src="res/android/icon/xxxhdpi_1574366750_ff4b1086feb0398acc82.png" density="xxxhdpi" />
+
+        <splash src="res/android/screen/1574367196_8e6ca6d3fcab48158a80.png" density="port-hdpi"/>
+        <splash src="res/android/screen/1574367196_6fd3fc573102f2176b20.png" density="port-ldpi"/>
+        <splash src="res/android/screen/1574367196_48d30081df9823f2e33a.png" density="port-mdpi"/>
+        <splash src="res/android/screen/1574367196_67412fd19bc76c6182c9.png" density="port-xhdpi"/>
+        <splash src="res/android/screen/1574367196_627239989016df0a2cbf.png" density="land-hdpi"/>
+        <splash src="res/android/screen/1574367196_1db308107146fc6d3a67.png" density="land-ldpi"/>
+        <splash src="res/android/screen/1574367196_699b42b85de7820674f2.png" density="land-mdpi"/>
+        <splash src="res/android/screen/1574367196_24518e1daf892ecf1282.png" density="land-xhdpi"/>
+    </platform>
+
+    <access origin='*'/>
+    <plugin name='cordova-plugin-whitelist' />
+    <allow-intent href='http://*/*'/>
+    <allow-intent href='https://*/*'/>
+    <allow-intent href='tel:*'/>
+    <allow-intent href='sms:*'/>
+    <allow-intent href='mailto:*'/>
+    <allow-intent href='geo:*'/>
+
+</widget>
